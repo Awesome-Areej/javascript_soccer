@@ -1,3 +1,3 @@
 # javascript_soccer
 
-A school project. 
+A school project. Click the ball to score and move the ball around. 
