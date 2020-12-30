@@ -1,0 +1,56 @@
+<!DOCTYPE html/>
+<html>
+
+<head><title> Coding Inquiry </title>
+
+<style type="text/css">
+#gimper {position: absolute; top: 0px; left: 0px;}
+
+body {
+	background-image: url("https://soccerlifestyle.com/wp-content/uploads/2020/02/how-big-is-a-professional-soccer-field-1.jpeg");
+	background-repeat: no-repeat;
+	background-size: 3000px 2000px;
+}
+
+#hello {
+	font-family: Copperplate;
+	font-size: 50px;
+}
+
+</style>
+
+<script type="text/javascript">
+
+function changeImg()
+{
+var x = Math.floor(Math.random()*300)
+var y = Math.floor(Math.random()*300)
+
+var obj = document.getElementById("gimper")
+
+obj.style.top = x + "px";
+obj.style.left = y + "px";
+
+ }
+
+function buttonclick()  {
+	document.getElementById("hello").value++;
+}
+
+function myfunction(){
+changeImg();
+buttonclick();
+}
+
+</script>
+
+</head>
+<body>
+<img id="gimper" src="https://www.pinclipart.com/picdir/big/1-19484_free-soccer-ball-image-outline-download-free-clip-art.png" 
+width="500" height="500" alt="black and white soccer ball with hexagonal shapes" onclick="myfunction()"/>
+<input type=text id="hello" value="0"></input>
+
+</body>
+</html>
+
+
